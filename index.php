@@ -1,6 +1,8 @@
 <?php
 
-if(!isset($_SESSION['user'])){
+require_once "includes/config_session.inc.php";
+
+if(!isset($_SESSION['user_id'])){
     header("Location: views/login.php");
     exit();
 }else{
